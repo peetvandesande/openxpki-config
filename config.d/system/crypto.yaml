@@ -50,4 +50,4 @@ secret:
         method: literal
         # please set your own key string here and keep it in a safe place
         # this must be 64 characters hex -> "openssl  rand -hex 32"
-        value: you must put your own 64 characters key here ##SVAULTKEY##
+        value: ##SVAULTKEY##

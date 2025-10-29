@@ -49,5 +49,7 @@ secret:
         label: Secret group for datavault encryption
         method: literal
         # please set your own key string here and keep it in a safe place
-        # this must be 64 characters hex -> "openssl  rand -hex 32"
+        # this must be 64 characters hex.
+        # Use the below command to update this file:
+        # sed -i "s|##SVAULTKEY##|$(openssl rand -hex 32)|" crypto.yaml
         value: ##SVAULTKEY##

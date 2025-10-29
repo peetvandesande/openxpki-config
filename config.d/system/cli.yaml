@@ -2,10 +2,12 @@
 # the name of the key is only used for logging purposes
 # the keys can be generated using `oxi cli create`
 # read the keys from the credential manager
+# Upon adding keys, remove " ~" after auth: as it 'nullifies' the variable
 auth: ~
+# auth:
 #   admin:
-#        key: >
+#        key: |
 #         -----BEGIN PUBLIC KEY-----
-#          ....
+#         ....
 #         -----END PUBLIC KEY-----
 #       role: RA Operator
